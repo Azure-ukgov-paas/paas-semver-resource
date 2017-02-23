@@ -1,0 +1,5 @@
+#!/bin/bash
+
+GOOS=linux GOARCH=amd64 go build -o built-in in/main.go
+GOOS=linux GOARCH=amd64 go build -o built-out out/main.go
+GOOS=linux GOARCH=amd64 go build -o built-check check/main.go
